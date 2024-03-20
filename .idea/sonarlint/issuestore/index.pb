@@ -71,3 +71,5 @@ U
 %data/podcast/Spring Office Hours.json,9/6/96212dcead2caa1500b383df4660cfbf08659f95
 S
 #data/podcast/The InfoQ Podcast.json,e/6/e6b08c30f2b24e3a33036fcf0b6eaca33854cffb
+J
+.github/workflows/hugo.yml,9/7/973f087bcce0bd4ddf1d12f62631e6d46de1a1d5

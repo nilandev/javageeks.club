@@ -27,6 +27,14 @@
     padding: 0 0.5rem;
 }
 
+.f-subheadline-l {
+    font-weight: 600;
+}
+
+h2.fw1 {
+    font-weight: 500;
+}
+
 .cards {
     display: table;
 }

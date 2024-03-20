@@ -33,10 +33,7 @@
 
 .card {
     background-color: rgb(255, 255, 255);
-    /*border: 1px solid rgba(25, 25, 28, .2);*/
-    /*border-radius: 8px;*/
     padding: 1.55rem;
-    margin: 0.7rem 0;
     transition: all 0.2s ease-in-out !important;
     height: 185px;
     position: relative !important;

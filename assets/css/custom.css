@@ -35,6 +35,11 @@ h2.fw1 {
     font-weight: 500;
 }
 
+.f3 {
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
 .cards {
     display: table;
 }

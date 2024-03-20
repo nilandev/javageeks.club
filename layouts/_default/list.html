@@ -1,0 +1,23 @@
+{{ define "main" }}
+    {{ $customCSS := resources.Get "css/custom.css" }}
+    <link rel="stylesheet" href="{{ $customCSS.Permalink }}">
+
+    <div class="container">
+        <div class="lead">{{ .Content }}</div>
+
+        <div class="cards">
+            <h1>WTF</h1>
+            {{ range $filename, $data := $.Site.Data.podcast }}
+                <div class="fl w-one-third">
+                    <h2 class="card-title">{{ $data.title }}</h2>
+                    <p>{{ $data.bio }}</p>
+                    <p>Category: {{ $data.category }}</p>
+                    <p>Type: {{ $data.type }}</p>
+                    <a href="{{ $data.link }}">Link</a>
+                    {{ if $data.website }}<a href="{{ $data.website }}" target="_blank">Website</a>{{ end }}
+                    <!-- If your file contains an array of objects, you'll need an additional range -->
+                </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+body {
+    font-family: "Martian Mono", monospace;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 1.35rem;
+    margin: 3rem 0;
+}
+
+
+.padding-3 {
+    padding: 1.75rem;
+}
+
+.bg-white {
+    background: white;
+}
+
+.section-header {
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.cards {
+    display: table;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    /*border: 1px solid rgba(25, 25, 28, .2);*/
+    /*border-radius: 8px;*/
+    padding: 1.55rem;
+    margin: 0.7rem 0;
+    transition: all 0.2s ease-in-out !important;
+    height: 185px;
+    position: relative !important;
+}
+
+.stretched-link {
+    text-decoration: none;
+    color: initial;
+    /*opacity: 0;*/
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.card:hover {
+    box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+    border-color: #222222;
+}
+
+.card-link {
+    font-weight: 500;
+    color: #357edd;
+    text-decoration: none;
+}
+
+.card-body {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

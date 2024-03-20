@@ -1,0 +1,26 @@
+{{ define "main" }}
+    {{ $customCSS := resources.Get "css/custom.css" }}
+    <link rel="stylesheet" href="{{ $customCSS.Permalink }}">
+
+    <div class="container">
+        <div class="lead">{{ .Content }}</div>
+        <h2 class="section-header">Podcasts</h2>
+        <div class="cards">
+            {{ range $filename, $data := $.Site.Data.podcast }}
+                {{ if eq $data.type "podcast" }}
+                    {{ partial "resource.html" $data }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <h2 class="section-header">YouTube</h2>
+        <div class="cards">
+            {{ range $filename, $data := $.Site.Data.youtube }}
+                {{ if eq $data.type "youtube" }}
+                    {{ partial "resource.html" $data }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+{{ end }}

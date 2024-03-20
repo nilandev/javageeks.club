@@ -1,0 +1,11 @@
+baseURL: 'https://javageeks.club'
+languageCode: 'en-us'
+title: 'JAVAGEEKS.club'
+theme: 'ananke'
+params:
+#  ananke_socials:
+#    - name: twitter
+#      url: https://twitter.com/StackTips
+#    - name: github
+#      url: https://github.com/StackTipsLab
+  
